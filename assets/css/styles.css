@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 142;
+  --hue-color: 250;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340 - test 183*/
 
   /* HSL color mode */
@@ -503,51 +503,39 @@ img {
 }
 
 .skills__html {
-  width: 90%;
+  width: 60%;
 }
 
 .skills__css {
-  width: 90%;
+  width: 50%;
 }
 
 .skills__js {
-  width: 80%;
+  width: 50%;
 }
 
 .skills__react {
-  width: 80%;
+  width: 40%;
 }
 
-.skills__php {
-  width: 80%;
-}
-
-.skills__node {
-  width: 70%;
-}
-
-.skills__mongodb {
+.skills__figma {
   width: 60%;
 }
 
-.skills__express {
-  width: 80%;
-}
-
-.skills__solidity {
+.skills__next {
   width: 30%;
 }
 
-.skills__ethereum {
+.skills__node {
+  width: 30%;
+}
+
+.skills__mongodb {
+  width: 30%;
+}
+
+.skills__express {
   width: 20%;
-}
-
-.skills__cryptography {
-  width: 60%;
-}
-
-.skills__contract {
-  width: 25%;
 }
 
 .skills__close .skills__list {

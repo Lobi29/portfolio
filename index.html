@@ -10,7 +10,7 @@
 
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -75,7 +75,8 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/laditya-gogoi-2595b821a" target="_blank" class="home__social-icon">
+                        <a href="https://www.linkedin.com/in/laditya-gogoi-2595b821a" target="_blank"
+                            class="home__social-icon">
                             <i class="uil uil-linkedin"></i>
                         </a>
                         <a href="https://github.com/Lobi29" target="_blank" class="home__social-icon">
@@ -100,7 +101,8 @@
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="12" y="5" href="./assets/img/SD-removebg-preview.png" />
+                                <image class="home__blob-img" x="12" y="5"
+                                    href="./assets/img/SD-removebg-preview.png" />
                             </g>
                         </svg>
                     </div>
@@ -136,7 +138,8 @@
 
                 <div class="about__data">
                     <p class="about__description">
-                        I build staff behind the pixels | Full Stack Developer | CDAC Intern | GSSOC 2023 Contributor | NIT Silchar (2nd Year)
+                        I build staff behind the pixels | Full Stack Developer | CDAC Intern | GSSOC 2023 Contributor |
+                        NIT Silchar (2nd Year)
                     </p>
                     <div class="about__info">
                         <div>
@@ -387,7 +390,8 @@
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Summer Intern</h3>
-                                <span class="qualification__subtitle">Centre For Development of Advanced Computing, Govt. of India</span>
+                                <span class="qualification__subtitle">Centre For Development of Advanced Computing,
+                                    Govt. of India</span>
                                 <div class="qualification__calender">
                                     <i class="uil uil-calendar-alt"></i>
                                     April-2023 - ongoing
@@ -407,65 +411,20 @@
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work (scroll)</span>
-
-            <div class="portfolio__container container swiper-container">
+            <span class="section__subtitle">Most recent work</span>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/agro.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">F2F (farmer to farmer)</h3>
-                            <p class="portfolio__description">A step towards modernize the traditional way of agriculture and organize the whole agricultural community.</p>
-
-                            <a href="https://github.com/farmer2farmer2investor/agro-f2f-README.md" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 2 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/scraponics.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Scraponics</h3>
-                            <p class="portfolio__description">The Ewaste Scraponics Project functions as a unified platform, connecting individuals, organizations, and vendors. Through the Scraponics platform, stakeholders can engage in economic transactions, including buying, selling, and donating their scrap items.</p>
-
-                            <a href="https://github.com/scraponics/scraponics-README.md" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 3 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/jobapp.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Job App</h3>
-                            <p class="portfolio__description">Discover your dream job with our React Native app! Access a vast database of job listings powered by RapidAPI, providing real-time job data. Browse, search, and apply to your desired positions effortlessly. Your next career move is just a tap away!</p>
-
-                            <a href="https://github.com/Lobi29/jobapp" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <div class="swiper-slide slide_1">Slide 1</div>
+                    <div class="swiper-slide slide_2">Slide 2</div>
+                    <div class="swiper-slide slide_3">Slide 3</div>
+                    <div class="swiper-slide slide_4">Slide 4</div>
+                    <div class="swiper-slide slide_5">Slide 5</div>
                 </div>
-
-                <!-- Add arrow -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-                <!-- Add pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
+
         </section>
 
         <!--==================== CONTACT ME ====================-->
@@ -578,10 +537,10 @@
     </a>
 
     <!--==================== SWIPER JS ====================-->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" ></script>
 </body>
 
 </html>

@@ -60,7 +60,7 @@ skillsHeader.forEach((el) => {
 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
-tabContents = document.querySelectorAll('[data-content]');
+    tabContents = document.querySelectorAll('[data-content]');
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -86,7 +86,7 @@ const modalViews = document.querySelectorAll('.services__modal');
 const modalBtns = document.querySelectorAll('.services__button');
 const modalClose = document.querySelectorAll('.services__modal-close');
 
-let modal = function(modalClick) {
+let modal = function (modalClick) {
     modalViews[modalClick].classList.add('active-modal');
 }
 
@@ -105,18 +105,17 @@ modalClose.forEach((modalClose) => {
 })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper('.portfolio__container', {
-    cssMode: true,
-    loop: true,
-
+let swiper = new Swiper(".mySwiper", {
     navigation: {
-        nextE1: '.swiper-button-next',
-        prevE1: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-    pagination: {
-        e1: '.swiper-pagination',
-        clickable: true
-    },
+    observer: true,
+    observeParents: true,
+    loop: true,
+    // freeMode: true,
+    // watchSlidesVisibility: true,
+    // watchSlidesProgress: true,
 });
 
 /*==================== TESTIMONIAL ====================*/
@@ -143,7 +142,7 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
     const nav = document.getElementById('header')
     // when the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
@@ -155,7 +154,7 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*==================== SHOW SCROLL UP ====================*/ 
+/*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
 
@@ -167,7 +166,7 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'

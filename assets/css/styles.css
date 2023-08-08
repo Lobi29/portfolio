@@ -726,65 +726,62 @@ img {
 
 
 /*==================== PORTFOLIO ====================*/
-.portfolio__container {
-  overflow: initial;
+
+
+.swiper {
+  right: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
-.portfolio__content {
-  padding: 0 1.5rem;
+
+.swiper-slide {
+  text-align: center;
+   /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.portfolio__img {
-  width: 265px;
-  border-radius: .5rem;
-  justify-self: center;
+
+.slide_1 {
+  background-color:#643ca3 ;
 }
 
-.portfolio__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
+
+.slide_2 {
+  background-color:#e38364 ;
 }
 
-.portfolio__description {
-  margin: var(--mb-0-75);
+
+.slide_3 {
+  background-color:#faf47a ;
 }
 
-.portfolio__button:hover .button__icon {
-  transform: translateX(.25rem);
+
+.slide_4 {
+  background-color:#64e3c1 ;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: '';
-}
 
-.swiper-portfolio-icon {
-  font-size: 2rem;
-  color: var(--first-color);
+.slide_5 {
+  background-color:#9e6ffd ;
 }
-
-.swiper-button-prev {
-  left: -.5rem;
-}
-
-.swiper-button-next {
-  right: -.5rem;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets {
-  bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--first-color);
-}
-
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination-bullet {
-  outline: none;
-}
-
 
 /*==================== PROJECT IN MIND ====================*/
 
